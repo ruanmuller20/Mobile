@@ -12,7 +12,7 @@ export default function Home() {
 
     function handleAccessCredential(){
         if(!code.trim()){
-            return Alert.alert("Credencial", "Informe o código do ingresso!")
+            return Alert.alert("Ingresso", "Informe o código do ingresso!")
 
         }
 
