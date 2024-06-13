@@ -1,4 +1,4 @@
-import { View, Image, ImageBackground, Text } from "react-native";
+import { View, Image, ImageBackground, Text, TouchableOpacity } from "react-native";
 
 
 export function Credential(){
@@ -27,8 +27,23 @@ export function Credential(){
               
               <Image 
                source={{ uri: "https://github.com/ruanmuller20.png"}}
-               className="w-36 h-26 rounded-full -mt-24"
+               className="w-36 h-36 rounded-full -mt-24"
                />
+
+               <Text className="font-bold text-2xl text-zinc-50 mt-4">
+                Ruan Müller
+               </Text>
+
+               <Text className="font-regular text-base text-zinc-300 mb-4"> 
+                ruanmuller20gmail.com
+               </Text>
+               
+               <Image source={require("@/assets/ticket/qrcode.png")} className="w-32 h-32"/>
+            
+            
+            <TouchableOpacity activeOpacity={0.7} className="mt-6">
+               <Text className="font-body text-orange-500 text-sm">Ampliar QRcode</Text>
+            </TouchableOpacity>
 
             </View>
 
